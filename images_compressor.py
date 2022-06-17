@@ -10,4 +10,10 @@ if __name__ == "__main__":
 
         if (extension in [".jpng", ".jpeg", ".png"]):
             picture = Image.open(downloadFolder + filename)
-            picture.save(downloadFolder + "compressed_" + filename, optimize=True, quality=60)
+            picture.save(
+                downloadFolder +
+                "compressed_" +
+                filename,
+                optimize=True,
+                quality=60
+            )
